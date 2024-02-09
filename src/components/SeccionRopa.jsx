@@ -21,9 +21,9 @@ const SeccionRopa = () => {
         
         <h1>Ropa</h1>
 
-        <ul>
+        <ul className="lista-padre">
             {
-                ropas.map( ropa => <li> <NavLink to={`/detalle-ropa/${ropa.id}`}>{ropa.nombre}</NavLink></li>)
+                ropas.map( ropa => <li> <NavLink className="lista-padre" to={`/detalle-ropa/${ropa.id}`}>{ropa.nombre}</NavLink></li>)
             }
         </ul>
 

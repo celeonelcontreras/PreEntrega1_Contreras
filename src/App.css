@@ -63,3 +63,33 @@ ul {
   background-color: #F5B5FA;
   color: white;
 }
+
+.lista-padre {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lista-hijo {
+  margin-bottom: 50px;
+}
+
+.detalle-titulo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.lista-u-padre {
+  text-align: center;
+}
+
+.img-detalle-padre {
+  display: flex;
+  justify-content: center;
+}
+
+.img-detalle-hijo {
+  width:  500px;
+  height: 500px;
+}

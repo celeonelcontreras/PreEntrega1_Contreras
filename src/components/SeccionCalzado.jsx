@@ -21,9 +21,9 @@ const SeccionCalzado = () => {
         
         <h1>Calzado</h1>
 
-        <ul>
+        <ul className="lista-padre">
             {
-                calzados.map( calzado => <li> <NavLink to={`/detalle-calzado/${calzado.id}`}>{calzado.nombre}</NavLink></li>)
+                calzados.map( calzado => <li> <NavLink className="lista-hijo" to={`/detalle-calzado/${calzado.id}`}>{calzado.nombre}</NavLink></li>)
             }
         </ul>
 
