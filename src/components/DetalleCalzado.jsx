@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import carrito from '../image/carrito1.png'
+import AgregarCarroApp from "../AgregarCarroApp";
+import '../App.css';
 
 
 const DetalleCalzado = () => {
@@ -30,6 +32,10 @@ useEffect(() => {
 
         <div className="img-detalle-padre">
         <img  src={carrito} alt="" className='img-detalle-hijo'/>
+        </div>
+      
+        <div className="agregar-carro-padre">
+        <NavLink className={'agregar-carro'} to={`/producto-agregado`}>AGREGAR AL CARRO</NavLink>
         </div>
 
         </>
